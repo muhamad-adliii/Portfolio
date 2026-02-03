@@ -48,7 +48,7 @@ body {
 }
 
 .navbar {
-  padding: 1.5rem;  
+  padding: 1.5rem;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -131,11 +131,13 @@ body {
 }
 
 .hero .description {
-  font-size: clamp(0.50rem, 2vw, 1.2rem);
+  font-size: clamp(0.5rem, 2vw, 1.2rem);
   color: var(--text-color);
   max-width: 1200px;
   margin-bottom: 2rem;
-  animation: cursor 1s step-start infinite, linee 5s steps(50) alternate;
+  animation:
+    cursor 1s step-start infinite,
+    linee 5s steps(50) alternate;
   overflow: hidden;
   white-space: nowrap;
 }
@@ -164,7 +166,9 @@ body {
   text-decoration: none;
   border-radius: 50px;
   font-weight: 600;
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
   box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
 }
 
@@ -240,7 +244,9 @@ section {
   background: linear-gradient(90deg, #cbacf9, #e4ecff);
   transform-origin: left;
   transition: transform 0.3s ease;
-  animation: line 1s step-start infinite, text 3s steps(200) alternate infinite;
+  animation:
+    line 1s step-start infinite,
+    text 3s steps(200) alternate infinite;
   overflow: hidden;
   white-space: nowrap;
 }
@@ -282,7 +288,10 @@ section {
   border-radius: 20px;
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.1);
-  transition: transform 0.3s, box-shadow 0.3s, border 0.3s;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s,
+    border 0.3s;
   backdrop-filter: blur(10px);
 }
 
@@ -373,7 +382,9 @@ section {
   border-radius: 15px;
   padding: 2rem;
   backdrop-filter: blur(10px);
-  transition: transform 0.3s, border 0.3s;
+  transition:
+    transform 0.3s,
+    border 0.3s;
 }
 
 .experience-card:hover {
@@ -428,8 +439,13 @@ section {
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 15px;
   overflow: hidden;
-  transition: transform 0.3s, box-shadow 0.3s, border 0.3s;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s,
+    border 0.3s;
   cursor: pointer;
+  display: flex;
+  align-items: center;
 }
 
 .certificate-card:hover {
@@ -520,7 +536,7 @@ footer {
 }
 
 @media (max-width: 480px) {
-  .navbar{
+  .navbar {
     margin-top: 10px;
   }
   .certificates-grid {
